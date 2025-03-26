@@ -244,7 +244,7 @@ flowchart TD
     Decision -->|Yes| Next[出版・マーケティングフェーズへ]
     Decision -->|No| Revise[編集フェーズに戻る]
     
-    Revise --> EditPhase[5. 編集・洗練フェーズ]
+    Revise --> EditPhase[5.編集・洗練フェーズ]
 ```
 
 ### 8. 出版・マーケティングフェーズ
@@ -300,8 +300,8 @@ flowchart TD
     
     TechMaintain & BizMaintain & EduMaintain & LitMaintain --> Continue[継続的保守・モニタリング]
     
-    Major --> Research[3. 調査・コンテンツ準備フェーズ]
-    Generate --> AIGenerate[4. Claudeコンテンツ生成フェーズ]
+    Major --> Research[3.調査・コンテンツ準備フェーズ]
+    Generate --> AIGenerate[4.Claudeコンテンツ生成フェーズ]
 ```
 
 ## 書籍タイプ別ワークフロー
@@ -312,7 +312,7 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    Start([専門書・技術書制作開始]) --> Plan[1. 企画・計画フェーズ]
+    Start([専門書・技術書制作開始]) --> Plan[1.企画・計画フェーズ]
     
     subgraph "専門書・技術書固有計画タスク"
         PlanTech1[専門分野の最新動向調査]
@@ -325,7 +325,7 @@ flowchart TD
     PlanTech1 --> PlanTech2
     PlanTech2 --> PlanTech3
     PlanTech3 --> PlanTech4
-    PlanTech4 --> ClaudePrep[2. Claude活用準備フェーズ]
+    PlanTech4 --> ClaudePrep[2.Claude活用準備フェーズ]
     
     subgraph "専門書Claude設定タスク"
         ClaudeTech1[技術文書用プロンプトテンプレート作成]
@@ -336,7 +336,7 @@ flowchart TD
     ClaudePrep --> ClaudeTech1
     ClaudeTech1 --> ClaudeTech2
     ClaudeTech2 --> ClaudeTech3
-    ClaudeTech3 --> Research[3. 調査・コンテンツ準備フェーズ]
+    ClaudeTech3 --> Research[3.調査・コンテンツ準備フェーズ]
     
     subgraph "専門書準備タスク"
         ResTech1[技術的概念の階層構造マッピング]
@@ -350,7 +350,7 @@ flowchart TD
     ResTech2 --> ResTech3
     ResTech3 --> ResTech4
     ResTech4 --> OutlineReview[社内有識者アウトラインレビュー]
-    OutlineReview -->|承認| Generate[4. Claudeコンテンツ生成フェーズ]
+    OutlineReview -->|承認| Generate[4.Claudeコンテンツ生成フェーズ]
     OutlineReview -->|修正要求| ResTech1
     
     subgraph "専門書生成タスク"
@@ -364,7 +364,7 @@ flowchart TD
     GenTech1 --> GenTech2
     GenTech2 --> GenTech3
     GenTech3 --> GenTech4
-    GenTech4 --> Edit[5. 編集・洗練フェーズ]
+    GenTech4 --> Edit[5.編集・洗練フェーズ]
     
     subgraph "専門書編集タスク"
         EditTech1[専門家による技術レビュー]
@@ -377,7 +377,7 @@ flowchart TD
     EditTech1 --> EditTech2
     EditTech2 --> EditTech3
     EditTech3 --> EditTech4
-    EditTech4 --> Visual[6. ビジュアル・デザイン要素フェーズ]
+    EditTech4 --> Visual[6.ビジュアル・デザイン要素フェーズ]
     
     subgraph "専門書ビジュアルタスク"
         VisTech1[技術図面・概念図精密化]
@@ -390,7 +390,7 @@ flowchart TD
     VisTech1 --> VisTech2
     VisTech2 --> VisTech3
     VisTech3 --> VisTech4
-    VisTech4 --> QA[7. 品質保証フェーズ]
+    VisTech4 --> QA[7.品質保証フェーズ]
     
     subgraph "専門書QAタスク"
         QATech1[業界専門家による技術的正確性最終確認]
@@ -404,7 +404,7 @@ flowchart TD
     QATech2 --> QATech3
     QATech3 --> QATech4
     QATech4 --> FinalReview[社内有識者最終レビュー]
-    FinalReview -->|承認| Publish[8. 出版・マーケティングフェーズ]
+    FinalReview -->|承認| Publish[8.出版・マーケティングフェーズ]
     FinalReview -->|修正要求| Edit
     
     subgraph "専門書マーケティングタスク"
@@ -418,7 +418,7 @@ flowchart TD
     PubTech1 --> PubTech2
     PubTech2 --> PubTech3
     PubTech3 --> PubTech4
-    PubTech4 --> Maintain[9. 保守・更新・拡張フェーズ]
+    PubTech4 --> Maintain[9.保守・更新・拡張フェーズ]
     
     subgraph "専門書保守タスク"
         MaintTech1[新技術トレンド継続的監視・統合]
@@ -444,7 +444,7 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    Start([ビジネス書制作開始]) --> Plan[1. 企画・計画フェーズ]
+    Start([ビジネス書制作開始]) --> Plan[1.企画・計画フェーズ]
     
     subgraph "ビジネス書固有計画タスク"
         PlanBiz1[ターゲット業界・市場動向分析]
@@ -457,7 +457,7 @@ flowchart TD
     PlanBiz1 --> PlanBiz2
     PlanBiz2 --> PlanBiz3
     PlanBiz3 --> PlanBiz4
-    PlanBiz4 --> ClaudePrep[2. Claude活用準備フェーズ]
+    PlanBiz4 --> ClaudePrep[2.Claude活用準備フェーズ]
     
     subgraph "ビジネス書Claude設定タスク"
         ClaudeBiz1[ビジネス書プロンプトテンプレート作成]
@@ -468,7 +468,7 @@ flowchart TD
     ClaudePrep --> ClaudeBiz1
     ClaudeBiz1 --> ClaudeBiz2
     ClaudeBiz2 --> ClaudeBiz3
-    ClaudeBiz3 --> Research[3. 調査・コンテンツ準備フェーズ]
+    ClaudeBiz3 --> Research[3.調査・コンテンツ準備フェーズ]
     
     subgraph "ビジネス書準備タスク"
         ResBiz1[業界データ・市場分析情報収集]
@@ -482,7 +482,7 @@ flowchart TD
     ResBiz2 --> ResBiz3
     ResBiz3 --> ResBiz4
     ResBiz4 --> OutlineReview[社内有識者アウトラインレビュー]
-    OutlineReview -->|承認| Generate[4. Claudeコンテンツ生成フェーズ]
+    OutlineReview -->|承認| Generate[4.Claudeコンテンツ生成フェーズ]
     OutlineReview -->|修正要求| ResBiz1
     
     subgraph "ビジネス書生成タスク"
@@ -496,7 +496,7 @@ flowchart TD
     GenBiz1 --> GenBiz2
     GenBiz2 --> GenBiz3
     GenBiz3 --> GenBiz4
-    GenBiz4 --> Edit[5. 編集・洗練フェーズ]
+    GenBiz4 --> Edit[5.編集・洗練フェーズ]
     
     subgraph "ビジネス書編集タスク"
         EditBiz1[ビジネス実務者による実用性検証]
@@ -509,7 +509,7 @@ flowchart TD
     EditBiz1 --> EditBiz2
     EditBiz2 --> EditBiz3
     EditBiz3 --> EditBiz4
-    EditBiz4 --> Visual[6. ビジュアル・デザイン要素フェーズ]
+    EditBiz4 --> Visual[6.ビジュアル・デザイン要素フェーズ]
     
     subgraph "ビジネス書ビジュアルタスク"
         VisBiz1[戦略マップ・ビジネスモデル視覚表現強化]
@@ -522,7 +522,7 @@ flowchart TD
     VisBiz1 --> VisBiz2
     VisBiz2 --> VisBiz3
     VisBiz3 --> VisBiz4
-    VisBiz4 --> QA[7. 品質保証フェーズ]
+    VisBiz4 --> QA[7.品質保証フェーズ]
     
     subgraph "ビジネス書QAタスク"
         QABiz1[ビジネスリーダーによる実用性評価]
@@ -536,7 +536,7 @@ flowchart TD
     QABiz2 --> QABiz3
     QABiz3 --> QABiz4
     QABiz4 --> FinalReview[社内有識者最終レビュー]
-    FinalReview -->|承認| Publish[8. 出版・マーケティングフェーズ]
+    FinalReview -->|承認| Publish[8.出版・マーケティングフェーズ]
     FinalReview -->|修正要求| Edit
     
     subgraph "ビジネス書マーケティングタスク"
@@ -550,7 +550,7 @@ flowchart TD
     PubBiz1 --> PubBiz2
     PubBiz2 --> PubBiz3
     PubBiz3 --> PubBiz4
-    PubBiz4 --> Maintain[9. 保守・更新・拡張フェーズ]
+    PubBiz4 --> Maintain[9.保守・更新・拡張フェーズ]
     
     subgraph "ビジネス書保守タスク"
         MaintBiz1[市場動向・業界変化定期更新]
@@ -575,7 +575,7 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    Start([教育書制作開始]) --> Plan[1. 企画・計画フェーズ]
+    Start([教育書制作開始]) --> Plan[1.企画・計画フェーズ]
     
     subgraph "教育書固有計画タスク"
         PlanEdu1[学習目標・成果明確化]
@@ -588,7 +588,7 @@ flowchart TD
     PlanEdu1 --> PlanEdu2
     PlanEdu2 --> PlanEdu3
     PlanEdu3 --> PlanEdu4
-    PlanEdu4 --> ClaudePrep[2. Claude活用準備フェーズ]
+    PlanEdu4 --> ClaudePrep[2.Claude活用準備フェーズ]
     
     subgraph "教育書Claude設定タスク"
         ClaudeEdu1[学習段階別プロンプトテンプレート作成]
@@ -599,7 +599,7 @@ flowchart TD
     ClaudePrep --> ClaudeEdu1
     ClaudeEdu1 --> ClaudeEdu2
     ClaudeEdu2 --> ClaudeEdu3
-    ClaudeEdu3 --> Research[3. 調査・コンテンツ準備フェーズ]
+    ClaudeEdu3 --> Research[3.調査・コンテンツ準備フェーズ]
     
     subgraph "教育書準備タスク"
         ResEdu1[教育心理学・ラーニングサイエンス知見収集]
@@ -613,7 +613,7 @@ flowchart TD
     ResEdu2 --> ResEdu3
     ResEdu3 --> ResEdu4
     ResEdu4 --> OutlineReview[社内有識者アウトラインレビュー]
-    OutlineReview -->|承認| Generate[4. Claudeコンテンツ生成フェーズ]
+    OutlineReview -->|承認| Generate[4.Claudeコンテンツ生成フェーズ]
     OutlineReview -->|修正要求| ResEdu1
     
     subgraph "教育書生成タスク"
@@ -627,7 +627,7 @@ flowchart TD
     GenEdu1 --> GenEdu2
     GenEdu2 --> GenEdu3
     GenEdu3 --> GenEdu4
-    GenEdu4 --> Edit[5. 編集・洗練フェーズ]
+    GenEdu4 --> Edit[5.編集・洗練フェーズ]
     
     subgraph "教育書編集タスク"
         EditEdu1[教育専門家による教育的有効性評価]
@@ -640,7 +640,7 @@ flowchart TD
     EditEdu1 --> EditEdu2
     EditEdu2 --> EditEdu3
     EditEdu3 --> EditEdu4
-    EditEdu4 --> Visual[6. ビジュアル・デザイン要素フェーズ]
+    EditEdu4 --> Visual[6.ビジュアル・デザイン要素フェーズ]
     
     subgraph "教育書ビジュアルタスク"
         VisEdu1[学習コンセプトの段階的視覚化]
@@ -653,7 +653,7 @@ flowchart TD
     VisEdu1 --> VisEdu2
     VisEdu2 --> VisEdu3
     VisEdu3 --> VisEdu4
-    VisEdu4 --> QA[7. 品質保証フェーズ]
+    VisEdu4 --> QA[7.品質保証フェーズ]
     
     subgraph "教育書QAタスク"
         QAEdu1[教育実践者による学習効果テスト]
@@ -667,7 +667,7 @@ flowchart TD
     QAEdu2 --> QAEdu3
     QAEdu3 --> QAEdu4
     QAEdu4 --> FinalReview[社内有識者最終レビュー]
-    FinalReview -->|承認| Publish[8. 出版・マーケティングフェーズ]
+    FinalReview -->|承認| Publish[8.出版・マーケティングフェーズ]
     FinalReview -->|修正要求| Edit
     
     subgraph "教育書マーケティングタスク"
@@ -681,7 +681,7 @@ flowchart TD
     PubEdu1 --> PubEdu2
     PubEdu2 --> PubEdu3
     PubEdu3 --> PubEdu4
-    PubEdu4 --> Maintain[9. 保守・更新・拡張フェーズ]
+    PubEdu4 --> Maintain[9.保守・更新・拡張フェーズ]
     
     subgraph "教育書保守タスク"
         MaintEdu1[学習成果に基づくコンテンツ改善サイクル]
@@ -707,7 +707,7 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    Start([文学作品制作開始]) --> Plan[1. 企画・計画フェーズ]
+    Start([文学作品制作開始]) --> Plan[1.企画・計画フェーズ]
     
     subgraph "文学作品固有計画タスク"
         PlanLit1[物語構造・ストーリーアーク設計]
@@ -720,7 +720,7 @@ flowchart TD
     PlanLit1 --> PlanLit2
     PlanLit2 --> PlanLit3
     PlanLit3 --> PlanLit4
-    PlanLit4 --> ClaudePrep[2. Claude活用準備フェーズ]
+    PlanLit4 --> ClaudePrep[2.Claude活用準備フェーズ]
     
     subgraph "文学作品Claude設定タスク"
         ClaudeLit1[創作スタイル・トーン指示プロンプト作成]
@@ -731,7 +731,7 @@ flowchart TD
     ClaudePrep --> ClaudeLit1
     ClaudeLit1 --> ClaudeLit2
     ClaudeLit2 --> ClaudeLit3
-    ClaudeLit3 --> Research[3. 調査・コンテンツ準備フェーズ]
+    ClaudeLit3 --> Research[3.調査・コンテンツ準備フェーズ]
     
     subgraph "文学作品準備タスク"
         ResLit1[キャラクター心理・動機深堀り]
@@ -745,7 +745,7 @@ flowchart TD
     ResLit2 --> ResLit3
     ResLit3 --> ResLit4
     ResLit4 --> OutlineReview[社内有識者アウトラインレビュー]
-    OutlineReview -->|承認| Generate[4. Claudeコンテンツ生成フェーズ]
+    OutlineReview -->|承認| Generate[4.Claudeコンテンツ生成フェーズ]
     OutlineReview -->|修正要求| ResLit1
     
     subgraph "文学作品生成タスク"
@@ -759,7 +759,7 @@ flowchart TD
     GenLit1 --> GenLit2
     GenLit2 --> GenLit3
     GenLit3 --> GenLit4
-    GenLit4 --> Edit[5. 編集・洗練フェーズ]
+    GenLit4 --> Edit[5.編集・洗練フェーズ]
     
     subgraph "文学作品編集タスク"
         EditLit1[文学エディターによるクリエイティブ評価]
@@ -772,7 +772,7 @@ flowchart TD
     EditLit1 --> EditLit2
     EditLit2 --> EditLit3
     EditLit3 --> EditLit4
-    EditLit4 --> Visual[6. ビジュアル・デザイン要素フェーズ]
+    EditLit4 --> Visual[6.ビジュアル・デザイン要素フェーズ]
     
     subgraph "文学作品ビジュアルタスク"
         VisLit1[物語世界の視覚的表現・雰囲気設計]
@@ -785,7 +785,7 @@ flowchart TD
     VisLit1 --> VisLit2
     VisLit2 --> VisLit3
     VisLit3 --> VisLit4
-    VisLit4 --> QA[7. 品質保証フェーズ]
+    VisLit4 --> QA[7.品質保証フェーズ]
     
     subgraph "文学作品QAタスク"
         QALit1[文学批評家・創作者によるクリエイティブ評価]
@@ -799,7 +799,7 @@ flowchart TD
     QALit2 --> QALit3
     QALit3 --> QALit4
     QALit4 --> FinalReview[社内有識者最終レビュー]
-    FinalReview -->|承認| Publish[8. 出版・マーケティングフェーズ]
+    FinalReview -->|承認| Publish[8.出版・マーケティングフェーズ]
     FinalReview -->|修正要求| Edit
     
     subgraph "文学作品マーケティングタスク"
@@ -813,7 +813,7 @@ flowchart TD
     PubLit1 --> PubLit2
     PubLit2 --> PubLit3
     PubLit3 --> PubLit4
-    PubLit4 --> Maintain[9. 保守・更新・拡張フェーズ]
+    PubLit4 --> Maintain[9.保守・更新・拡張フェーズ]
     
     subgraph "文学作品保守タスク"
         MaintLit1[関連作品・スピンオフ企画開発]
